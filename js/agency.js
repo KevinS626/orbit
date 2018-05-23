@@ -27,27 +27,29 @@
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-      $(".nav-item a").addClass("nav-link-dark");
-      $(".aaaLogo").addClass("hidden");
-      $(".aaaLogo:nth-of-type(2)").removeClass("hidden");
-      // $(".navbar-brand img:nth-child(1)").removeClass("hidden");
-      // $(".navbar-brand img:nth-child(2)").addClass("hidden");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-      $(".nav-item a").removeClass("nav-link-dark");
-      $(".aaaLogo").removeClass("hidden");
-      $(".aaaLogo:nth-of-type(2)").addClass("hidden");
-      // $(".navbar-brand img:nth-child(1)").addClass("hidden");
-      // $(".navbar-brand img:nth-child(2)").removeClass("hidden");
-    }
-  };
+
+  // var navbarCollapse = function() {
+  //   if ($("#mainNav").offset().top > 100) {
+  //     $("#mainNav").addClass("navbar-shrink");
+  //     $(".nav-item a").addClass("nav-link-dark");
+  //     $(".Logo").addClass("hidden");
+  //     $(".Logo:nth-of-type(2)").removeClass("hidden");
+  //   } else {
+  //     $("#mainNav").removeClass("navbar-shrink");
+  //     $(".nav-item a").removeClass("nav-link-dark");
+  //     $(".Logo").removeClass("hidden");
+  //     $(".Logo:nth-of-type(2)").addClass("hidden");
+  //   }
+  // };
+  
   // Collapse now if page is not at top
-  navbarCollapse();
+
+  // navbarCollapse();
+
   // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
+
+  // $(window).scroll(navbarCollapse);
+
 
   // Hide navbar when modals trigger
   $('.portfolio-modal').on('show.bs.modal', function(e) {
