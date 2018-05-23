@@ -31,11 +31,15 @@
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
       $(".nav-item a").addClass("nav-link-dark");
+      $(".aaaLogo").addClass("hidden");
+      $(".aaaLogo:nth-of-type(2)").removeClass("hidden");
       // $(".navbar-brand img:nth-child(1)").removeClass("hidden");
       // $(".navbar-brand img:nth-child(2)").addClass("hidden");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
       $(".nav-item a").removeClass("nav-link-dark");
+      $(".aaaLogo").removeClass("hidden");
+      $(".aaaLogo:nth-of-type(2)").addClass("hidden");
       // $(".navbar-brand img:nth-child(1)").addClass("hidden");
       // $(".navbar-brand img:nth-child(2)").removeClass("hidden");
     }
